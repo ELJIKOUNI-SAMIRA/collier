@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAMIRA-JK, boutique de bijoux élégants et raffinés.">
+  <title>SAMIRA-JK | Luxury Jewelry</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">SAMIRA<span>-JK</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-icons">
+      <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cartCount">0</span>
+      </button>
+
+      <button class="menu-button" id="menuButton" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">SAMIRA-JK · COLLECTION EXCLUSIVE</p>
+
+      <h1>
+        L'élégance<br>
+        est dans <span>les détails.</span>
+      </h1>
+
+      <p class="hero-description">
+        Découvrez notre univers de bijoux raffinés.
+        Des pièces délicates qui illuminent chaque instant
+        et révèlent votre beauté naturelle.
+      </p>
+
+      <a href="#collection" class="main-button">
+        Découvrir la collection
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <div class="hero-note">
+        <span class="gold-line"></span>
+        <span>BEAUTY · ELEGANCE · LUXURY</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="image.webp"
+        alt="Collier en or élégant">
+      <div class="hero-image-label">
+        <span>THE GOLDEN COLLECTION</span>
+        <strong>Timeless Beauty</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <i class="fa-solid fa-gem"></i>
+      <div>
+        <h3>Style raffiné</h3>
+        <p>Des bijoux élégants</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <i class="fa-solid fa-box-open"></i>
+      <div>
+        <h3>Joli emballage</h3>
+        <p>Chaque détail compte</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <i class="fa-solid fa-heart"></i>
+      <div>
+        <h3>Avec amour</h3>
+        <p>Pour chaque occasion</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <i class="fa-solid fa-truck-fast"></i>
+      <div>
+        <h3>Livraison</h3>
+        <p>Contactez-nous</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85"
+        alt="Collection de bijoux élégants">
+      <div class="about-stamp">
+        <span>S</span>
+        <small>SAMIRA-JK</small>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow">NOTRE HISTOIRE</p>
+
+      <h2>
+        Plus qu'un bijou,<br>
+        <span>une signature.</span>
+      </h2>
+
+      <p>
+        SAMIRA-JK est un univers dédié à la beauté et à
+        l'élégance des bijoux. Nous aimons les détails,
+        les belles formes et les pièces qui donnent
+        une touche spéciale à chaque tenue.
+      </p>
+
+      <p>
+        Notre collection rassemble des inspirations
+        modernes et intemporelles pour vous accompagner
+        dans tous vos moments précieux.
+      </p>
+
+      <a href="#collection" class="text-link">
+        Explorer notre collection
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="section-heading">
+      <p class="eyebrow">CHOOSE YOUR FAVORITE</p>
+      <h2>Notre <span>Collection</span></h2>
+      <p>Des bijoux choisis pour sublimer votre élégance.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="colliers">Colliers</button>
+      <button class="filter-btn" data-filter="bagues">Bagues</button>
+      <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+      <button class="filter-btn" data-filter="boucles">Boucles</button>
+    </div>
+
+    <div class="products-grid">
+
+      <article class="product-card" data-category="colliers">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=85" alt="Collier Golden">
+          <span class="product-tag">BEST SELLER</span>
+          <button class="add-cart" data-name="Collier Golden" data-price="450">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Collier Golden</h3><p>Colliers</p></div>
+          <strong>450 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="colliers">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=700&q=85" alt="Collier Élégance">
+          <button class="add-cart" data-name="Collier Élégance" data-price="390">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Collier Élégance</h3><p>Colliers</p></div>
+          <strong>390 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="colliers">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=85" alt="Collier Royal">
+          <button class="add-cart" data-name="Collier Royal" data-price="520">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Collier Royal</h3><p>Colliers</p></div>
+          <strong>520 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bagues">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=85" alt="Bague Élégance">
+          <button class="add-cart" data-name="Bague Élégance" data-price="290">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bague Élégance</h3><p>Bagues</p></div>
+          <strong>290 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bagues">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=700&q=85" alt="Bague Prestige">
+          <button class="add-cart" data-name="Bague Prestige" data-price="340">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bague Prestige</h3><p>Bagues</p></div>
+          <strong>340 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bagues">
+        <div class="product-image">
+          <img src="photo.jpg" alt="Bague Délicate">
+          <button class="add-cart" data-name="Bague Délicate" data-price="260">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bague Délicate</h3><p>Bagues</p></div>
+          <strong>260 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bracelets">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=85" alt="Bracelet Royal">
+          <button class="add-cart" data-name="Bracelet Royal" data-price="350">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bracelet Royal</h3><p>Bracelets</p></div>
+          <strong>350 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bracelets">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=85" alt="Bracelet Chic">
+          <button class="add-cart" data-name="Bracelet Chic" data-price="310">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bracelet Chic</h3><p>Bracelets</p></div>
+          <strong>310 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bracelets">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=85" alt="Bracelet Shine">
+          <button class="add-cart" data-name="Bracelet Shine" data-price="380">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Bracelet Shine</h3><p>Bracelets</p></div>
+          <strong>380 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="boucles">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=85" alt="Boucles Chic">
+          <button class="add-cart" data-name="Boucles Chic" data-price="320">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Boucles Chic</h3><p>Boucles</p></div>
+          <strong>320 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="boucles">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=85" alt="Boucles Glamour">
+          <button class="add-cart" data-name="Boucles Glamour" data-price="280">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Boucles Glamour</h3><p>Boucles</p></div>
+          <strong>280 DH</strong>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="boucles">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=700&q=85" alt="Boucles Luxury">
+          <button class="add-cart" data-name="Boucles Luxury" data-price="360">
+            Ajouter au panier <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="product-info">
+          <div><h3>Boucles Luxury</h3><p>Boucles</p></div>
+          <strong>360 DH</strong>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PROMOTION BANNER -->
+  <section class="banner">
+    <p>THE ART OF ELEGANCE</p>
+    <h2>Brillez à votre manière.</h2>
+    <a href="#collection" class="main-button">Découvrir les bijoux</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">SAMIRA<span>-JK</span></a>
+        <p>L'élégance n'est pas un détail,<br>c'est une signature.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Navigation</h3>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#collection">Collection</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Contact</h3>
+        <a href="mailto:contact@samirajk.com">Email</a>
+        <a href="#contact">Service client</a>
+        <a href="#collection">Nos bijoux</a>
+      </div>
+
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SAMIRA-JK. Tous droits réservés.</p>
+      <p>Made with <i class="fa-solid fa-heart"></i> for elegance.</p>
+    </div>
+  </footer>
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- CART PANEL -->
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Votre panier</h2>
+      <button id="closeCart" aria-label="Fermer le panier">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Votre panier est vide.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">0 DH</strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">
+        Commander sur WhatsApp
+        <i class="fa-brands fa-whatsapp"></i>
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
